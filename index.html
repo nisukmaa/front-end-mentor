@@ -3,13 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>QR Code Component</title>
-
-        <!-- Icons -->
-        <link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
-        />
+        <title>Frontend Mentor Exercise</title>
 
         <!-- font -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,58 +12,83 @@
 
         <style>
             body{
-                background-color: #d5e1ef;
                 margin: 0px;
+                background-color: #F5EDED;
+            }
+
+            .highlight{
                 display: flex;
+                flex-direction: column;
                 justify-content: center;
                 align-items: center;
                 text-align: center;
-                height: 100vh;
+                margin: 0 auto;
+                background-color: #6482AD ;
+                color: #E2DAD6;
+                h1{
+                    font-size: 72px;
+                    margin-bottom: 30px;
+                    font-weight: bold;
+                }
+                p{
+                    font-size: 30px;
+                }
             }
 
-            .qr-text{
-                position: relative;
-                align-items: center;
+            .box{
+                font-size: 20px;
+                width: 200px;
+                background-color: #E2DAD6;
+                padding: 10px;
+                border-radius: 5px;
+                cursor: pointer;
+                text-align: center;
+                cursor: pointer;
+            }
+
+            .box:hover{
+                background-color: #6482AD;
+                a{
+                    color: #fff;
+                }
+            }
+
+            .boxes{
+                display: flex;
+                flex-wrap: wrap;
+                grid-gap: 15px;
+                padding: 20px;
+                margin-top: 30px;
                 justify-content: center;
-                background-color: #fff;
-                padding : 16px 16px 40px 16px;
-                border-radius: 20px;
-                width: 300px;
-                height: max-content;
             }
 
-            img{
-                border-radius: 10px;
-                width: 300px;
-                height: 300px;
-                margin-bottom: 25px;
-            }
-
-            h1{
-                font-size: 22px;
-                font-weight: 700;
-                text-align: center;
-                line-height: 120%;
-                letter-spacing: 0px;
-                margin: 0px 16px 16px 16px;
-            }
-
-            p{
-                font-size: 15px;
-                font-weight: 400;
-                line-height: 140%;
-                letter-spacing: 0.2px;
-                text-align: center;
-                margin: 0px 16px;
+            a{
+                text-decoration: none;
+                color: #000;
             }
         </style>
     </head>
-
     <body>
-        <div class="qr-text">
-            <img src="./image/image-qr-code.png" alt="QR Code, generate by Frontend Mentor">
-            <h1>Improve your front-end skills by building projects</h1>
-            <p>Scan the QR code to visit Frontend Mentor and take your coding skills the next level</p>
+        <div class="highlight">
+            <h1>Frontend Mentor Exercise</h1>
+            <p>by Nyoman Sukma</p>
+        </div>
+        <div class="boxes">
+            <div class="box">
+                <a href="./blog-preview-card.html">QR Code Component</a>
+            </div>
+            <div class="box">
+                <a href="./blog-preview-card.html">Blog Preview Card</a>
+            </div>
+            <!-- <div class="box">
+                <a href="">Next Project</a>
+            </div>
+            <div class="box">
+                <a href="">Next Project</a>
+            </div>
+            <div class="box">
+                <a href="">Next Project</a>
+            </div> -->
         </div>
     </body>
 </html>
