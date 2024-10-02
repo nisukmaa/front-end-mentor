@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Omelette Recipe Page</title>
+
+        <!-- font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap" rel="stylesheet">
+
+        <style>
+            body{
+                margin: 0;
+                background-color: hsl(30, 54%, 90%);
+            }
+
+            main{
+                background-color: #fff;
+                width: 700px;
+                padding: 35px;
+                border-radius: 20px;
+                margin: 20px auto 20px auto;
+                img{
+                    width: 700px;
+                    display: block;
+                    margin: 0px auto 0px auto;
+                    border-radius: 10px;
+                }
+                p{
+                    font-family: "Outfit", sans-serif;
+                    font-weight: 500;
+                    font-size: 16px;
+                    color: hsl(30, 10%, 34%);
+                    margin: 0px;
+                    margin-bottom: 25px;
+                    line-height: 24px;
+                }
+                h1{
+                    font-family: "Young Serif", serif;
+                    font-weight: 400;
+                }
+            }
+
+            .preparation{
+                background-color: hsl(330, 100%, 98%);
+                border-radius: 7px;
+                padding: 25px;
+                font-family: "Outfit", sans-serif;
+                font-size: 16px;
+                margin-bottom: 25px;
+                h3{
+                    margin-top: 0px;
+                    margin-bottom: 16px;
+                    color: hsl(332, 51%, 32%);
+                }
+                ul{
+                    margin: 0px;
+                    padding-left: 15px;
+                }
+                li{
+                    padding-left: 30px;
+                    padding-bottom: 10px;
+                }
+
+                b{
+                    font-weight: 600;
+                }
+            }
+
+            article{
+                h2{
+                    font-family: "Young Serif", serif;
+                    font-weight: 400;
+                    color: hsl(14, 45%, 36%);
+                    margin-top: 0px;
+                    margin-bottom: 25px;
+                }
+                ul, ol{
+                    margin: 0px;
+                    padding-left: 20px;
+                    margin-bottom: 25px;
+                    color: hsl(14, 45%, 36%);
+                }
+                li{
+                    padding-left: 30px;
+                    line-height: 28px;
+                    font-family: "Outfit", sans-serif;
+                    font-weight: 500;
+                    font-size: 16px;
+                    color: hsl(30, 10%, 34%);
+                }
+
+                .line{
+                    border-bottom: 1px solid hsl(30, 18%, 87%);
+                    margin-bottom: 25px;
+                }
+
+                b{
+                    font-weight: 700;
+                }
+
+                table{
+                    width: 700px;
+                    font-family: "Outfit", sans-serif;
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: hsl(30, 10%, 34%);
+                }
+
+                td{
+                    border-bottom: 1px solid hsl(30, 18%, 87%);
+                    padding: 15px;
+                    font-weight: 500;
+                    b{
+                        color: hsl(14, 45%, 36%); 
+                    }
+                }
+            }
+            
+        </style>
+    </head>
+
+    <body>
+        <main>
+            <img src="./image/image-omelette.jpeg" alt="Omelette">
+            <h1>Simple Omelette Recipe</h1>
+            <p>An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs
+                cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats.
+            </p>
+
+            <div class="preparation">
+                <h3>Preparation Time</h3>
+                <ul>
+                    <li><b>Total</b>: Approximately 10 minutes</li>
+                    <li><b>Preparation</b>: 5 minutes</li>
+                    <li style="padding-bottom: 0px;"><b>Cooking</b>: 5 minutes</li>
+                </ul>
+            </div>
+
+            <article>
+                <h2>Ingredients</h2>
+                <ul>
+                    <li>2-3 large eggs</li>
+                    <li>Salt, to taste</li>
+                    <li>Pepper, to taste</li>
+                    <li>1 tablespoon of butter or oil</li>
+                    <li>Optional fillings : cheese, diced vegetables, cooked meats, herbs</li>
+                </ul>
+                <div class="line"></div>
+            </article>
+
+            <article>
+                <h2>Instructions</h2>
+                <ol>
+                    <li><b>Beat the eggs</b>: in a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed.
+                        You can add a tablespoon of water or milk for a fluffier texture.</li>
+                    <li><b>Heat the pan</b>: Place a non-stick frying pan over medium heat and add butter or oil.</li>
+                    <li><b>Cook the omelette</b>: Once the butter is melted and bubbling, pour in the eggs. 
+                        Tilt the pan to ensure the eggs evenly coat the surface.</li>
+                    <li><b>Add fillings (optional)</b>: When the eegs begin to set at the edges but are still slightly runny in the middle, 
+                        sprinkle your chosen fillings over one half of the omelette.</li>
+                    <li><b>Fold and serve</b>: As the omelette continues to cook, carefully lift one edge and fold it over the fillings. 
+                        Let it cook for another minute, then slide it onto a plate.</li>
+                    <li><b>Enjoy</b>: Serve hot, with additional salt and pepper id needed.</li>
+                </ol>
+                <div class="line"></div>
+            </article>
+
+            <article>
+                <h2>Nutrition</h2>
+                <p>The table below shows nutritional values per serving without the additional fillings.</p>
+                <table>
+                    <tr>
+                        <td>Calories</td>
+                        <td><b>277kcal</b></td>
+                    </tr>
+                    <tr>
+                        <td>Carbs</td>
+                        <td><b>0g</b></td>
+                    </tr>
+                    <tr>
+                        <td>Protein</td>
+                        <td><b>20g</b></td>
+                    </tr>
+                    <tr>
+                        <td style="border: 0px;">Fat</td>
+                        <td style="border: 0px;"><b>22g</b></td>
+                    </tr>
+                </table>
+            </article>
+        </main>
+    </body>
+
+</html>
