@@ -1,0 +1,207 @@
+    <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <title>Product Preview Card Page</title>
+
+            <!-- font -->
+            <link rel="preconnect" href="https://fonts.googleapis.com" />
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+            <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+            <style>
+                body{
+                    margin: 0;
+                    background-color: hsl(30, 38%, 92%);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    min-height: 100vh;
+                }
+
+                main{
+                    display: flex;
+                    flex-direction: row;
+                    height: 505px;
+                    width: 730px;
+                    border-radius: 10px;
+                    background-color: hsl(0, 0%, 100%);
+
+                    img{
+                        width: 100%;
+                        border-radius: 10px 0 0 10px;
+                    }
+                }
+
+                article{
+                    padding: 40px;
+                    box-sizing: border-box;
+
+                    h3{
+                        font-family: "Montserrat", serif;
+                        color: hsl(228, 12%, 48%);
+                        font-weight: 500;
+                        font-size: 16px;
+                        margin: 0 0 15px 0;
+                    }
+
+                    h1{
+                        font-family: "Fraunces", serif;
+                        color: hsl(212, 21%, 14%);
+                        font-weight: bold;
+                        font-size: 40px;
+                        margin: 0 0 15px 0;
+                    }
+
+                    p{
+                        font-size: 18px;
+                        margin: 0 0 15px 0;
+                        font-family: "Montserrat", serif;
+                        color: hsl(228, 12%, 48%);
+                        font-weight: 400;
+                        line-height: 1.5;
+                    }
+
+                    strong{
+                        color: hsl(158, 36%, 37%);
+                        font-size: 36px;
+                        font-family: "Fraunces", serif;
+                        margin-right: 10px;
+                    }
+
+                    s{
+                        font-size: 14px;
+                        font-family: "Montserrat", serif;
+                    }
+
+                    .price {
+                        margin-bottom: 20px;
+                        display: flex;
+                        align-items: center;
+                    }
+
+                    button{
+                        background-color: hsl(158, 36%, 37%);
+                        border: none;
+                        display: flex;
+                        flex-direction: row;
+                        width: 300px;
+                        border-radius: 7px;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 20px;
+                        padding: 12px 5px;
+                        transition: background-color 0.5s;
+                        img{
+                            width: 20px;
+                            height: 20px;
+                        }
+                        p{
+                            color: hsl(0, 0%, 100%);
+                            text-align: center;
+                            font-size: 16px;
+                            font-family: "Montserrat", serif;
+                            font-weight: 600;
+                            margin: 0;
+                        }
+                    }
+
+                    button:hover{
+                        cursor: pointer;
+                        background-color: hsl(212, 21%, 14%);
+                    }
+                }
+
+                .mobile{
+                    display: none;
+                }
+
+                .desktop{
+                    width: 100%;
+                    height: auto;
+                }
+
+                @media(max-width : 768px){
+                    .desktop{
+                        display: none;
+                    }
+
+                    .mobile{
+                        display:flex;
+                        width: 100%;
+                        height: auto;
+                    }
+
+                    main{
+                        flex-direction: column;
+                        width: 90%;
+                        border-radius: 7px;
+                        margin: auto;
+                        background-color: white;
+                        height: auto;
+                    }
+
+                    img{
+                        border-radius: 7px 7px 0 0;
+                    }
+
+                    article {
+                        padding: 25px;
+                        box-sizing: border-box;
+                        width: 100%;
+                        height: auto;
+
+                        h3{
+                            font-size: 14px;
+                        }
+
+                        h1,strong{
+                            font-size: 28px;
+                        }
+
+                        p{
+                            font-size: 12px;
+                        }
+
+                        button {
+                            width: 100%;
+                            padding: 12px 0px;
+
+                            p{
+                                font-size: 12px;
+                            }
+
+                            embed{
+                                width: 18px;
+                                height: 18px;
+                            }
+                        }
+                    }
+                }
+            </style>
+        </head>
+
+        <body>
+            <main>
+                <img src="./image/image-product-desktop.jpg" alt="Parfume picture for desktop view" class="desktop">
+                <img src="./image/image-product-mobile.jpg" alt="Parfume picture for mobile view" class="mobile">
+                <article>
+                    <section class="information">
+                        <h3>P E R F U M E</h3>
+                        <h1>Gabrielle Essence Eau De Parfume</h1>
+                        <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL</p>
+                    </section>
+                    <section class="price">
+                        <strong>$149.99</strong>
+                        <s>$169.99</s>
+                    </section>
+                    <button>
+                        <img src="./image/icon-cart.svg" alt="Cart Icon">
+                        <p>Add to Cart</p>
+                    </button>
+                </article>
+            </main>
+        </body>
+
+    </html>
